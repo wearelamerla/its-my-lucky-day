@@ -109,14 +109,14 @@ h2.sec{font-weight:400;font-size:22px;margin:34px 0 12px;color:var(--plum)}
 
 /* sheet */
 #layer .scrim{position:fixed;inset:0;background:rgba(60,55,70,.30);opacity:0;transition:opacity .2s;z-index:10}
-#layer .sheet{position:fixed;left:0;right:0;bottom:0;margin:0 auto;max-width:520px;background:var(--bg);border-radius:26px 26px 0 0;padding:10px 20px calc(var(--sb) + 18px);transform:translateY(100%);transition:transform .25s cubic-bezier(.2,.8,.2,1);z-index:11}
+#layer .sheet{position:fixed;left:0;right:0;bottom:0;margin:0 auto;max-width:520px;background:var(--bg);border-radius:26px 26px 0 0;padding:10px 20px calc(var(--sb) + 18px);transform:translateY(100%);transition:transform .25s cubic-bezier(.2,.8,.2,1),bottom .15s ease;z-index:11;overflow-y:auto;-webkit-overflow-scrolling:touch}
 #layer.open .scrim{opacity:1}#layer.open .sheet{transform:none}
 .grab{width:40px;height:5px;border-radius:9px;background:var(--sand-2);margin:0 auto 4px}
 .sheet .head{display:flex;align-items:center;justify-content:space-between}
 .sheet .head div{font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:22px}
-.sheet textarea{width:100%;min-height:96px;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px;font-size:19px;resize:none;outline:none;margin-top:6px}
+.sheet textarea{width:100%;min-height:72px;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px;font-size:19px;resize:none;outline:none;margin-top:6px}
 .sheet textarea:focus{border-color:var(--brown)}
-.sug{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.sug{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
 .sug button{padding:7px 14px;border-radius:999px;background:var(--pink);border:1px solid #efcfdb;font-size:14px;font-weight:600;color:#6b4a63}
 .sug button:active{background:var(--sand)}
 .row2{display:grid;grid-template-columns:1fr 2fr;gap:10px;margin-top:14px}
@@ -384,10 +384,20 @@ function viewSetup(){
 }
 
 /* ---------- sheet ---------- */
+function fitSheet(){
+  const vv = window.visualViewport, sh = document.querySelector('#layer .sheet'); if (!vv || !sh) return;
+  const kb = Math.max(0, window.innerHeight - vv.height - vv.offsetTop);
+  sh.style.bottom = kb + 'px';
+  sh.style.maxHeight = Math.max(200, vv.height - 12) + 'px';
+  sh.style.paddingBottom = kb > 0 ? '14px' : '';
+}
+if (window.visualViewport) { visualViewport.addEventListener('resize', fitSheet); visualViewport.addEventListener('scroll', fitSheet); }
 function openSheet(html){
   const L = $('#layer');
   L.innerHTML = `<div class="scrim" onclick="WL.close()"></div><div class="sheet" role="dialog"><div class="grab"></div>${html}</div>`;
-  requestAnimationFrame(() => requestAnimationFrame(() => L.classList.add('open')));
+  fitSheet();
+  requestAnimationFrame(() => requestAnimationFrame(() => { L.classList.add('open'); fitSheet(); }));
+  setTimeout(fitSheet, 350);
 }
 function closeSheet(now){
   const L = $('#layer'); if (!L.innerHTML) return;
@@ -396,17 +406,18 @@ function closeSheet(now){
 }
 function entrySheet(e){
   openSheet(`<div class="head"><button class="iconbtn" onclick="WL.close()" aria-label="${T.close}">${I.close}</button><div>${e ? T.editT : T.addT}</div><span class="spacer"></span></div>
-    <textarea id="et" maxlength="200" rows="3" placeholder="${T.ph}" enterkeyhint="done">${e ? esc(e.text) : ''}</textarea>
-    ${e ? '' : `<div class="sug">${T.sugs.map(s => `<button type="button" data-s="${esc(s)}">${esc(s)}</button>`).join('')}</div>`}
+    <textarea id="et" maxlength="200" rows="2" placeholder="${T.ph}" enterkeyhint="done">${e ? esc(e.text) : ''}</textarea>
     ${e ? `<div class="row2"><button class="btn danger" id="edel">${T.del}</button><button class="btn" id="esave">${T.save}</button></div>`
-        : `<div class="actions" style="margin-top:14px"><button class="btn block" id="esave">${T.add}</button></div>`}`);
+        : `<div class="actions" style="margin-top:12px"><button class="btn block" id="esave">${T.add}</button></div>`}
+    ${e ? '' : `<div class="sug">${T.sugs.map(s => `<button type="button" data-s="${esc(s)}">${esc(s)}</button>`).join('')}</div>`}`);
   const ta = $('#et');
   // focus immediately so the keyboard opens on the same tap (iOS needs this synchronously)
   ta.focus({preventScroll:true});
   const go = () => { const v = ta.value.trim(); if (!v) { ta.focus(); return; }
     if (e) { e.text = v; save(); render(); toast(T.saved); }
     else { const n = { id: uid(), text: v, t: Date.now() }; S.entries.push(n); justAdded = n.id; save(); render(); toast(T.added); setTimeout(() => { justAdded = null; }, 600); } };
-  ta.addEventListener('keydown', ev => { if (ev.key === 'Enter' && !ev.shiftKey) { ev.preventDefault(); go(); } });
+  ta.addEventListener('keydown', ev => { if ((ev.key === 'Enter' || ev.keyCode === 13) && !ev.shiftKey) { ev.preventDefault(); go(); } });
+  ta.addEventListener('input', () => { if (ta.value.includes('\n')) { ta.value = ta.value.replace(/\n/g, ' ').trim(); go(); } });
   $('#esave').onclick = go;
   const sug = $('.sug'); if (sug) sug.addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; ta.value = b.dataset.s; ta.focus(); });
   if (e) $('#edel').onclick = () => { if (!confirm(T.confirmDel)) return; S.entries = S.entries.filter(x => x.id !== e.id); save(); render(); toast(T.deleted); };
