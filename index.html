@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>It's My Lucky Day</title>
+<meta name="description" content="Catch the lucky moments as they happen.">
+<meta name="theme-color" content="#f1ecf5">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Lucky Day">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAXQ0lEQVR4nO2dyY4c2XJgza7P4R4DWSy+miQ9adOLRgO9aKA/oFf9xy1Ae0H9AYJW0uunGllFZkS4+53NrBceOZEZZA6RY9yzKKAAZqSn+wm7ZnYHx/VvIyQSV6Ee+wIST5ckR2IvSY7EXpIcib0kORJ7SXIk9pLkSOwlyZHYS5IjsZccQB77GhJPlBQ5EnvJU+BI7CNFjsRekhyJvSQ5EntJciT2kuRI7CXJkdhLkiOxl9QhTewlRY7EXpIc5yAiIj72VTwhUvt8QpTKzfCeoute/UDRJ0sgRY4JEcmKevP+P379y//NiwqEH/uKngRJDgAAEEFEvf11WP+UMvQzkhynoIybX/sPf2UWSGMKACQ5diAKid78aof3wfWoshQ/IMkxgaiCH8343rvB6bVS+WNf0ZMgyQEAgip3duvMhoLV23dK5SIpcqQOKYAI51lmtr9FNwjKsP7xT3/+HyCcMo8UOaZSJdPb35gCCg7rn1PYmEhyAAAIwPr3f2cRVNmw+VmEUtiAJAcAAKJwHNY/KaVQKa/X0RvEdGdS+xwEMQtuMP07VJlSmRn+8HZbt18JBYCjjh/p+wFK5U5vnN4ozHaibN9lqWAByI/6qzHNqqjc9O+CH/KiAUSmoLe/qh/+O4oceeJx9JFDBJUa1j8JxykJFeFh/XNKSCHJAQAiMG5+2Y0hkysnPwqngiXJcVqqoFIgAiJK5bp/F/yIKnvsi3tkjr1DiioLftT9ecscMbP6JAZT1nMROuaC5cgjB2dZrre/meEPlRUAMs2zBD+a/vc0w3LUcogAYm6G32OwZ10vREXR6f63NKwctRynpcqPZ6UKAACCMA3rnxAVpMhxzFxRuIogquHkJ2E64nwD4Njb56g4hnHzK2J2MUigysb+HQWHoI75/hxz5BClsuAGvf0ty85zTxFRKjf9O+8GVEddzR2vHCKCoMzwh3f9ZQkEVe7doPvfENUxFyxHI4eICAuTCIswAKDKymbmzCZ4jXipMEGlKFin12XdoMoA8PLPHosuL3Il7fRtl6lUBQClMswKpXJUCgREKHrj9Hr7/i+//Ps/I+DHz1sEEH/9y7/U7VdVvSibZVF1iGpShDlOopx+/rQ77gXmrrj5af3Y13BXRARAQAAQEBBVplSOKkOVgQgzBT84vdH9u2Hz07j+Zdj84szaDH942yOiysqrggEyB2GumkXVrBav/7Zbfd+tvp8t3jbd12XVZUW904XiTpfTa5h23T78fTg4z1EOEdlFhXMVsgwxA2GiENxghj+c2Qybn8f1L8PmJ93/7vQ6+JE5ggAqNf2UUpkA7G1mICIAT6GCoggjZllRlVXXdF/PFm/nqx/a1XeL139bz14VVZdlBaASIaEL0WX3Ofgcp/GenxxK5SrLVVaKkDB525vhD93/3q//c1z/Mmx/0f27YPvgjQhNKiiVo8rV1PFEBJHzoefLnI4aiGeJy9mzR1RF1Rb1fDZ/2y2+bVffzlc/zOZv6/Z1Wc+zvAIAEWHyzCRM93ljDs+zkwPN8Hu//vHDr/+2ff//rD6x4/sYLAUHIIBqpwKqXTt8eqJT/nG4a9iNGjtdSJiZowiDAKosL5uibGfdm3b1fbt42y6+aZff1bNXRdUe7hoegmeXkEpeNE37ZvXmH4pyNm7fjUWjhz9CNkZvhEmYWESpHJSc1SAIKACHqzJkl95MH44ZKFSIzFGYhWOwA1OgaEMwdnwfvFZ5mRd1UXXPq9J5dpEDpmXAKiunry9F521vxw+6f9evf7w0srhxivznKSqqOw4rAMBMwlMSyoCAmBVlc3lk+ZvZ/Oume1PWc1QZYsbkmSJzvNc7c3CelRxTLTDlkFOFAnDp2avTnNQOVp9sP/x13Pzcn/yo+3dm+N27gYITIUSFWX6zhJRpUkGpvKjaqlnNuq+71fft8ttu+V01Wzbtm6I+zUmnALbLSwRAznNSeU41L25+XD/2NdydS42NCyVMjqhEiILzbjDD77p/N5z8OGx+3n74q9NrZ7dfLGXLet50b6pm2S2/a5ffdqvvZ93XVbMqqlapHBCEL6So582Vl9D8eBlyfMplXS6PLCIc3OjtxpntX//tn/7yr/+YlzO5cJrPtOn+7/7L//rzf/3fVb2oZsu8aBCzSQXmKBx5Kj1ekAqf8uwS0mtylijs/l84RgoAcKpLVs1eLd/8XfDjf/zr//n4uSKCyDd//z/f/s1/s3oLAsHr858FnIQDeHk+XOKIZh3P608AABZmb4aqWRTlTORSB0KYs6KumqW3Wjgiqss/C0dy045m4u0TEFGAm/arspoLxwtBAIVjWXWz+VsRehmN8NtxvHIAIBMVVTebvyWKZxIgInOcJlAuS3N0HLMcAMIqK9rlNx+duSBM7fxtlldy3GdOHrccAIiqW313qdWBKMLdq+9RZceRWuzluOVAFOZu9QOq/NwPAVRZt/pejv7kp6OWAxFEYtO9yYv6bAQR4SyvZvO3z24S9eActRwASBRm8z813RveHdWCwrEo26b7mjkec6kCx741AVCYimI2677uT/4zyysQYaF6tsrzWpiP++Yce+SYNr3l3ep7YQZEQGSOs+7romyFj3oXNRxVh3QPggjt4pvp4JZdivrqB1QqHUV69JEDUZi61XeodiMsouqW3x75LtmJYz8TDBGFYzt/W5QtU0CVqaxoF9+A0AtZQn4Hjj5yADBT1SyrZslCIlc01I+WJAcKU1G2U2ODmU6n4o49G4UkBwCAsFJ5t/yOmUW4mq3ysjnyWZWJJMeO1Zt/UKiEqVt+qy6fyHC0JDmmmTaaLd6qrBCBbvHtrqw9epIcgIhEcTZ/m1ctgHSr75mPvcMxceTt8wkUpqqa180yet12b5kiAqY7kzqkAADCXFZtM3vt7baaLU93Hx37nUnDCgAACKPKZ4u3dftVWXVpsn7ipW5NuAXSzv9E0U2neqScA5IcOxCFabb4Rpimc4wf+4KeBEkOgKlgiW711Z/ny2+jd5De4QUASY5TkJnq2QoAmEOaVZlIcpxzzKdKXkmKn4m9vHA5RIA5RYRb8sKHlRCitTHPVV0XSqVM4mbkL3j6MUYeBtdvbV6o1bJpmjL5cSNebORgFmN8v7XaBOV2zYtmlvy4AS9TDhGwLmy31tjAzMw4jB4AACHFj+vzMuUIIQ69G7UnmhZ0SYy08wOSH9flBcpBxOPoh9HFeGmp3+THdI5tXeep0/VFXpoczGJM6HvrHH1awsZIw+CVQsCmrq7rx+krRY9Ophclhwg4F7e9NSYwX71COEbqe4cAuGyq/X4wC7Mwc4wcIyNiXed5nh2VIS9KjhBoGNw4+kh7146LSAi07R0ALJdNVRXT8xYBEWFmIomRQuAQYggcIlFklan5vFrM66I4oveJvhw5iFhr1w8uhC8s1TnzQwAWc8nzbIoQPlAIFAOFyBQpEk/dVRFBRGHJFHZdnecvvK18xguRg1mMjdveORev0y2f/Oh7GwLnGRJJiBQjE7HsXuciH/176+JmYxGxbasj8eMlrCEVAe9j3xtj/L5U46qfkhAoRounY8rnbwQza+OnXXBdV2XZy88+nnnkEACAOKUag6N4s21qn0aIz8MsWntEUArbWamy0xXqL9STZ781gYhH7fvehcAP8Kcwi9FBoVVwoRn/zO/hPp535JhSgb53zkV+qBnESDxqhwiCMHvRzdbnLIeA99T3zhhP1041DkKMPIwOEZRSTV281ObHM5YjRB4G92mb/GGIkYfRK6UUwmeaac+a5yoHEWvj+8EFT4814sdA/eAQYLmsz5ppB0cEpunDLFMPbOCzlOM01bDWPlyqccVlAAQftwMAwmqJVZkfvGyJka0NxkZE6NrygUPUszwTzHseBqf13gmUB2PyYxggz5SaY1EcbPKFSJyPWvtx9NZHhRgjLxdVXT3cesfnFzli5FG7cfAxPtqAchEB8D5uthYAFvOqKPI7+sEsIZA2YRy9sSGE3fTythdmXi5g1jyQH8+sQ8os2vhtb52PT+e6WcC5nR/LBRbFLZvrIhAjGRNH7bX2PhBfGDWnFEdEQJrZ7CH8ePzIMU1uKfXlwVQEplTDPGqqcSUs4lzY9pApnM9vM/kSIzsfx9GPOjgXiD7+CwWAIp+tZ3sAPx5TDhGIkY0NMXJZZFWV5/n+hFwgBOp7N2rP+2fkHxEWsDZulEWFXVte3w9mcS6ejSOR9s7znPshICBNU+TZPU4BPlr7XE6XX2x7FwIVZdbOyrYpyirP1BWKxDgt/vMP0ya/HSxidJhuadeWX3xyIhICaxvG0WkTQ6AvRsQzP5iFSdrZDSy8KY8TOUTEe+oHt+mtc1EEfCTvydjQNmXTFGWZXbyzzGJs2M3IP8oVXxsSMTbgBhVi1+5trk/dC2PDqL3WwfnI1x4pZWrhj37ay9fdmx+PIIeIWEfb3m5758Pp0CoQAsXIzsba5LOmbJqiKrMsUyLgfOx7Z2x4aqnGlRCLNl5lqBReWVmclamD9tZGotvEQhLRZ1FqVmb54ROQh5aDWawNm363ZOviTZEpogQKka2NtSnatpzVBSD0gxvO9xk8A5hlHP30tC76wSz+Qpka4628OPstIsYG2ICwtG1ZHHqJ64PKQbQrRIfRx3j1bTlTJBI7H3VdKARtYngaXY1rIgBEPIweEBVCUxeAECMbEwbttQnhcpl6a5hF68AkxLLoqgN24eAh5YiRR+03W6tN+GIgFQBiYRdDIATgL67TenrIbgeNyxSyAICMOmjtnY+flql3+S0iYm0QEABYdFVZHmwJ9APJEQINo99srbHh+pF0UuReL+xeEYAYuR+cDyQszsd98fKOMICztBEDAHePHyJAzBT5/jukAj5MhYl73HmyR2Gq2GPkG65IvDEM4nzcbAwzL7qqqm7cxZ/OMgmRvCfnyft4v5FDRJynvnfb3jl/P9+aJ4881IFSLGBdnLZjLRd1fT0/RICZI3EIbF20LnpHIRIR36McImItbXq7i6tHacYDIwD+dMsWfNaPKU5E4hDI+WgdeR+nIHf2Hb4vOaa21WbrhtF/VLIm7pVpINv5Ma/rOrs0ayVALDFSiHzBCaZpB9flj7qX9jkRaxs3WzvtTEwx44E584NZllw1dYGIIqdxwkXjovcU4qkTex7Q4SPH1Nnd9G5Xsj5JM5iZiJVSmVIvcteJnM5TMkskyTIMnqwn52Pw5zs9P8+B5QiBBh12JetTHUxiJD1ao11Z5t18VhSHX973FBCBSDyMzgdSiNN+zymhuOY39mByTBOM/eg2WzflzIf65MMSQhx6vX7fG+OKMo+RlquuKF/m9gIRIBJjwtn/3ojDyCECztO2d/3gnI+PvbLzakQg+NBv9fpkq0dLxCFEZhGWxauuqooXub3gLsP6AeSY1qpMc2lPtmQVEe/DZj1uPvTGuGllsohY4z4wR+JXr7q6qfDlbl+7BXftkDKLtmE7laxPtf8pLNb6zXrYrHtn/MWrFBHnwuakF+bV63nTVOo+11Y9L+4UOSKxMXGztYP2dMURXE8CZjbGbz70m/Xgffj0KkXEu7BZD8y8er2YtXWW/ACAW8vBLDHyaMK2d1Nh8jTNIGIz2pOTvt+MIew910VAvA/bzUgsTNzOmzy/x+OdiDj4AABFWTxlEW8sx6SFdXE0Qevg/e3WMT0EMZIezcn7fuh1CPGL/z6EOGzGqTHULWZFcfgmELN4F8bR6MEg4nzR3reId+EGfz+LxMDWRW2CtsF7erIBAy6UrONoYrzuC/0i0TgYEWGW+WJ2wBJXRGKIWrt+O4699d4jovdhJ2L+FHst12qfs0iMbO2pFuFJa/FpyXqjHyficbBMQszLVVuWByhxYyRr3NDroTfWOIo8rc0ZB8PEkWix7Mqn12v5QuT4OFo8bS1gT8l6U5jZaMvCTLxcdXVd3rrEJWLvwjiYfjsa7T7Ke4hYazslOstVV9Xlk+q17JXj/rQQlhBiDFFl6rAZ2WdK1pvCItZ4pi0TrV4v6qa66fYyEfE+6tH0W61H693V276ZxRp3wkyRV6/ndVMq9VRS1CvkuEctRGKIxvhhq53zeZ63Xd20dXkIRb5Yst7iar0P65OBWVav57NZfc0WiAjEGK12fa+HXjsbiD6X9IiIs2HNPTG/ejVvnkwtfUmO+9UikjVuHOw4TOMuoUI9mqat266ZzeqizLPslosfr1my3uKyvY+b9UDE8pXMuuaLj42InfV9r4ettsbFeK07uKul1wMTr+6/lr4muw4pC8RA1tFlLQ5wi0WAiJz142D6rbHGx3j68EiMcd4HM9q6qWZtPWvrqi5uqsg0y3r9kvWmf0EIsd9qESHmrmvyPSdcn5apdtjqcTTR37hhHELsNyMRMVO3mOXFI5+ekp/1LbQJ2sYDagEwaRHGwY6DNtp5f8V3moiNcc4FPdpmVrZdM2ub6ysSAt2iZL0pMcZ+Oz02ni9mRZ5dfJ/5hTJVj73xPtx6/9VUSzMLES+WbVE+5mlj+bZ31tFhowWcZula22Gr9ehCCJ+fxGdm53wIwWjXzMx1FLlQsva3KFlvylTiCgvFXYkLCCAQaSpTzWmZetdlLESsR8PMTPy408X5HycmEh9QC2YJPoyjHXujR3ujrxGzOBdCiJ8o8vHxHZdL1hucan0XmFlrOy2iWqzaPM+Cj+Ng+q3+tEy92y8Sq90H4ki8etU1jzRdnDtHU9px91/OLNNzHXo9DtY5z7dqrU+D96kitm2rpq3rqsyL3VpZEXHGb9bDej3csWS9xbVZ40/eb2OIRZlb48fBeP+FuHibXyTinN+c9Mz86lXXzB6hhDnMpiYRiYGMcf1Wj6N11t8xugqA7BQhM9qqMbO27rqmrkuVobVh/aHfrMeDlKw3ZWqBxEAqQ4p0f3NLIuBd2JwMHHn1lbRt/cAlzF3nlnY1vfHjYIbhrBg5yLVNirDzHEK02o2DbdsqL3Izur7XIYTH6tUKSIgRDl4YXfGLIIa43Y5EzF9xN5/d99uARISImQTVHeT4pEZ18d62IbCID3HqlCiliOjued9zQXavptMsTMSL5awsisPO0k2b3ogoBgohOhcoUlWVt5RjavWMgx0GbbQLN6/pbwGLcIj4vM4/PBCn04HMxItVe/cSRgSEmZgnIbwPzoYp1QuBlMLFsr2ZHNNhRcHvatRxdCEEedjFgUdoxgQzG+2YhYhWr+ZVU97iuOvdWw0DhRCDj84F53zwMYRIkadCTACKPGO+9l5ZZomRvPPG+GnTh/fhdsVI4tawiLWePzARr17PZ9db8TotT4nxXAhvvd8JQbs3l338IzAdwfAFiDj4aK3TozPGOetjIH6y+1JeOtN0z/pkIGJ+PW/bOruqhJmEIOIYog8xuOBcmHpIMRDvHuDekD/NFeyfsmchIu/CLlQYF9xOswP9mYlbMnXrt5uRiYnOS5jp1YVMFCIHH7wP3kXnQvAhhkjEdMNTQj6RQ4CYQ4jOeqOd1s5ZH0JMI8iTQnZvT9bEzMSzrkGA3ajhg7fB+xBCJGK+atS4JudyiEiM7F2wxmltjfHeBSJ64HwzcX2mEoYiN6MFgKnWoEjEfJCnlk+/IwZybhcqrHEpVDwXphWNznkQ4Ju+7fKziEg+DMbZYLQ12nvvY6SUaz4vpmMLD/yZIt7F/LdfPgQfvZ9CRdIiAXA66Z33W/1A55klng/TIR55EiOxjyexyjnxNElyJPaS5EjsJcmR2EuSI7GXJEdiL0mOxF6SHIm9JDkSe0lyJPaS5EjsJcmR2EuSI7GXJEdiL0mOxF6SHIm9JDkSe3nQd9k/JnL2n7ty+CN2DveJCACHOyPqMc8j+xwCSgEiHuRPRQBEPNTJSQigFOJND63d92mIWYZ4oINplcI8zw71TPOn+WoiVFhXxawt8+wAZ5UgQl5kxYHuGiIURX7H98WfoZTK8yzPDyAHAqDCIs8O9TX4/+qVNA9BqDBnAAAAAElFTkSuQmCC">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&family=Great+Vibes&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f0f6; --surface:#fffdfe; --sand:#f5dfe6; --sand-2:#dccbe0;
+  --brown:#94713d; --brown-2:#7a5c30; --ink:#4b4555; --muted:#8d8496; --line:#ebe1ea;
+  --gold:#94713d; --gold-2:#7a5c30; --slate:#76628c; --plum:#76628c; --pink:#f5dfe6; --lilac:#ece4f3;
+  --r:18px;
+  --head:'Oswald','Arial Narrow',Impact,sans-serif;
+  --body:'Assistant',-apple-system,'Segoe UI',Roboto,sans-serif;
+  --st:env(safe-area-inset-top,0px); --sb:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{background:#f1ecf5}
+body{margin:0;color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;background:linear-gradient(180deg,#f1ecf5 0%,#f4eef4 35%,#f4dde3 100%) fixed}
+body{min-height:100vh;min-height:100dvh;overscroll-behavior-y:none}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+input,textarea{font:inherit;color:inherit}
+.mtn{position:fixed;left:0;right:0;bottom:0;height:30vh;max-height:260px;z-index:0;pointer-events:none;opacity:.5}
+.mtn svg{width:100%;height:100%;display:block}
+.app{position:relative;z-index:1;max-width:520px;margin:0 auto;padding:calc(var(--st) + 8px) 20px calc(var(--sb) + 60px)}
+
+.top{display:flex;align-items:center;justify-content:space-between;height:52px}
+.brand{letter-spacing:.28em;text-transform:uppercase;font-size:14px;font-weight:600;color:var(--ink)}
+.iconbtn{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;color:var(--ink)}
+.iconbtn:active{background:var(--sand)}
+.iconbtn svg{width:22px;height:22px}
+.spacer{width:40px}
+
+/* header */
+.cover{margin:22px 0 4px}
+.cover .date{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.cover{text-align:center}
+.cover .script{font-family:'Great Vibes','Snell Roundhand',cursive;color:#a8854f;font-size:92px;line-height:.9;display:flex;align-items:center;justify-content:center;gap:16px;margin-top:6px}
+.cover .script::before,.cover .script::after{content:'';width:34px;height:1.5px;background:#a8854f;margin-top:14px}
+.cover .hl{font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:30px;line-height:1.05;letter-spacing:.06em;margin-top:6px;color:var(--slate)}
+.count{text-align:center}
+
+.count{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:28px 0 12px}
+.count b{font-family:var(--head);font-weight:600;font-size:22px;letter-spacing:.02em;color:var(--brown);margin-right:4px;vertical-align:-1px}
+
+/* entries */
+.page{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.tpage{border:2px solid #a8854f;background:#fffefe;box-shadow:0 0 0 5px rgba(236,190,208,.45),0 16px 32px -16px rgba(118,98,140,.45)}
+.count b{color:#a8854f!important}
+.tpage .entry{border-top-color:#f1e4ec}
+.entry{display:flex;width:100%;text-align:left;gap:12px;align-items:flex-start;padding:15px 18px;border-top:1px solid var(--line)}
+.entry:first-child{border-top:0}
+.entry:active{background:var(--bg)}
+.entry .spark{flex:none;width:15px;height:15px;margin-top:4px;color:#a8854f}
+.entry .tx{flex:1;min-width:0;font-size:17px;overflow-wrap:anywhere}
+.entry .tm{flex:none;color:var(--muted);font-size:13px;margin-top:3px}
+.empty{padding:22px 20px;color:var(--muted)}
+.empty .ex{font-family:var(--head);text-transform:uppercase;font-weight:500;font-size:20px;line-height:1.25;color:var(--ink);margin:10px 0 0}
+
+.addbtn{min-height:56px;font-size:17px;box-shadow:0 14px 28px -16px rgba(110,85,40,.55)}
+.notebtn,.dnote{display:block;width:100%;text-align:left;margin-top:14px;padding:16px 20px;border-radius:var(--r);background:var(--lilac);border:1px dashed #cdb8dc}
+.notebtn .nl,.dnote .nl{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.notebtn b{display:block;font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:20px;color:var(--plum);margin-top:4px}
+.notebtn .ns{color:var(--muted)}
+.notebtn.eve{border:2px solid #a8854f;background:#fffefe}
+.dnote{border-style:solid;border-color:#e2d4ec}
+.dnote .nt{display:block;margin-top:6px;font-size:17px;line-height:1.55;color:var(--ink);font-style:italic}
+.day .dnote{margin-top:8px}
+.sheet .ntext{min-height:190px;font-size:18px;line-height:1.5}
+.memory{margin:16px 0 0;padding:18px 20px;border-radius:var(--r);background:var(--sand)}
+.memory .lbl{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#a0577a;font-weight:700}
+.memory .mt{font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:24px;line-height:1.1;margin:8px 0 4px;color:var(--slate)}
+.memory .md{color:#8a6a80;font-size:14px}
+.memory button{margin-top:8px;color:var(--brown);font-weight:600;font-size:14px;text-decoration:underline;text-underline-offset:3px}
+
+h2.sec{font-weight:400;font-size:22px;margin:34px 0 12px;color:var(--plum)}
+.day{margin-bottom:14px}
+.day .dh{display:flex;justify-content:space-between;align-items:baseline;padding:0 2px 8px}
+.day .dh b{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--plum);font-weight:700}
+.day .dh span{color:var(--muted);font-size:13px}
+.more{display:block;margin:6px auto 0;color:var(--brown);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+
+/* add button */
+.fab{position:fixed;left:50%;bottom:calc(var(--sb) + 24px);transform:translateX(-50%);z-index:5;height:56px;padding:0 30px;border-radius:999px;background:var(--brown);color:#fffaf2;font-weight:600;font-size:17px;display:flex;align-items:center;gap:10px;white-space:nowrap;box-shadow:0 14px 28px -14px rgba(60,35,15,.6)}
+.fab:active{background:var(--brown-2)}
+.fab svg{width:19px;height:19px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;border-radius:999px;background:var(--brown);color:#fffaf2;font-weight:600;font-size:16px}
+.btn:active{background:var(--brown-2)}
+.btn svg{width:19px;height:19px;margin-right:8px;flex:none}
+.btn.block{width:100%}
+.btn.ghost{background:transparent;color:var(--brown);box-shadow:inset 0 0 0 1.5px var(--brown)}
+.btn.danger{background:transparent;color:#a2402c;box-shadow:inset 0 0 0 1.5px #a2402c}
+.actions{display:grid;gap:10px;margin-top:22px}
+.link{color:var(--brown);font-weight:600;text-decoration:underline;text-underline-offset:3px}
+
+/* sheet */
+#layer .scrim{position:fixed;inset:0;background:rgba(60,55,70,.30);opacity:0;transition:opacity .2s;z-index:10}
+#layer .sheet{position:fixed;left:0;right:0;bottom:0;margin:0 auto;max-width:520px;background:var(--bg);border-radius:26px 26px 0 0;padding:10px 20px calc(var(--sb) + 18px);transform:translateY(100%);transition:transform .25s cubic-bezier(.2,.8,.2,1);z-index:11}
+#layer.open .scrim{opacity:1}#layer.open .sheet{transform:none}
+.grab{width:40px;height:5px;border-radius:9px;background:var(--sand-2);margin:0 auto 4px}
+.sheet .head{display:flex;align-items:center;justify-content:space-between}
+.sheet .head div{font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:22px}
+.sheet textarea{width:100%;min-height:96px;border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:14px 16px;font-size:19px;resize:none;outline:none;margin-top:6px}
+.sheet textarea:focus{border-color:var(--brown)}
+.sug{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.sug button{padding:7px 14px;border-radius:999px;background:var(--pink);border:1px solid #efcfdb;font-size:14px;font-weight:600;color:#6b4a63}
+.sug button:active{background:var(--sand)}
+.row2{display:grid;grid-template-columns:1fr 2fr;gap:10px;margin-top:14px}
+
+/* text pages */
+.hero{font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:36px;line-height:1.02;margin:14px 0 8px}
+.sub{color:var(--muted);margin:0 0 6px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px;margin-top:14px}
+.card .num{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--brown);font-weight:700}
+.card .ct{font-family:var(--head);text-transform:uppercase;font-weight:600;font-size:21px;line-height:1.15;margin:4px 0 6px}
+.card p{margin:0 0 10px;color:var(--brown-2)}
+.card .step{background:var(--bg);border-radius:12px;padding:12px 14px;line-height:1.9;color:var(--ink)}
+.card .small{font-size:13px;color:var(--muted)}
+.gi{width:20px;height:20px;vertical-align:-4px;color:#1a73e8;margin:0 2px}
+.hint{color:var(--muted);font-size:14px}
+.story{margin-top:22px;font-size:18px;line-height:1.6}
+.story p{margin:0}
+.story .dash{color:var(--muted);margin:16px 0}
+.bline{display:flex;width:100%;justify-content:space-between;align-items:center;gap:10px;text-align:left;background:var(--sand);border-radius:14px;padding:12px 16px;margin:4px 0 2px;color:var(--brown-2);font-size:15px}
+.bline svg{width:16px;height:16px;transform:rotate(180deg);flex:none}
+.foot{text-align:center;color:var(--muted);font-size:13px;margin-top:30px}
+.toast{position:fixed;left:50%;top:calc(var(--st) + 60px);transform:translate(-50%,-12px);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-size:15px;opacity:0;transition:.25s;z-index:20;pointer-events:none;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.pop{animation:pop .6s ease}
+@keyframes pop{0%{background:var(--sand)}100%{background:transparent}}
+@media (prefers-reduced-motion: reduce){.pop{animation:none}}
+</style>
+</head>
+<body>
+
+<div class="mtn" aria-hidden="true"><svg viewBox="0 0 400 200" preserveAspectRatio="none">
+  <defs>
+    <filter id="wc" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".035 .06" numOctaves="3" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="7"/><feGaussianBlur stdDeviation=".6"/></filter>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d3c8dd"/><stop offset="1" stop-color="#b7a7c6"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b19fc0"/><stop offset="1" stop-color="#8e7aa3"/></linearGradient>
+  </defs>
+  <g filter="url(#wc)">
+    <path d="M0 200 L0 120 L40 108 L80 70 L96 82 L140 30 L160 52 L178 44 L214 92 L250 78 L290 104 L330 86 L400 112 L400 200Z" fill="url(#g1)" opacity=".8"/>
+    <path d="M0 200 L0 150 L50 138 L96 104 L120 120 L170 84 L210 124 L246 108 L300 140 L350 124 L400 146 L400 200Z" fill="url(#g2)" opacity=".7"/>
+  </g></svg></div>
+<div class="app" id="app"></div>
+<div id="fabwrap"></div>
+<div id="layer"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+(() => {
+'use strict';
+const KEY = 'luckyday.v1';
+const DAY = 864e5;
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+
+const I = {
+  back:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>',
+  menu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
+  close:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+  plus:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>',
+  spark:'<svg class="spark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l2.1 8.4 8.4 2.1-8.4 2.1L12 22.5l-2.1-8.4L1.5 12l8.4-2.1z"/></svg>',
+  share:'<svg class="gi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 7l4-4 4 4M6 11H5v10h14V11h-1"/></svg>',
+  add:'<svg class="gi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8.5v7M8.5 12h7"/></svg>'
+};
+
+/* ---------- text (English now; ready for more languages) ---------- */
+const T = {
+  hl:'is my lucky day.', lucky:'is my lucky day…', count:n => n === 1 ? '<b>1</b> lucky thing today' : `<b>${n}</b> lucky things today`,
+  emptyT:'Something lucky will happen today.', emptyP:'When it does, tap it in:',
+  examples:['great coffee', 'a good parking spot', 'the sun came out'],
+  addBtn:'something lucky', addT:'Lucky!', editT:'Edit', ph:'What was lucky?', save:'save', add:'add', del:'delete',
+  sugs:['Great coffee','Good parking spot','Kind stranger','Sunshine','No queue','Green lights'],
+  memoryL:'a lucky memory', another:'another one',
+  earlier:'earlier days', showMore:'show more days',
+  added:'Lucky!', deleted:'Deleted', saved:'Saved',
+  confirmDel:'Delete this lucky thing?',
+  noteBtn:'Write today\'s note', noteBtnSub:'How was your lucky day?', noteT:'Today\'s note', noteEditT:'Note', notePh:'How was your lucky day?', noteL:'end of the day', noteSaved:'Note saved', confirmDelNote:'Delete this note?',
+  menuT:'Menu', mIdea:'the idea', mSettings:'settings & backup',
+  ideaT:'Today is my lucky day.', idea:[
+    'It started as a paper journal.',
+    'Every morning, write at the top of the page: today is my lucky day.',
+    'Every evening, list all the reasons it was.',
+    'Great coffee. A good parking spot. The sun came out.',
+    'The more you look for luck, the more you find it.',
+    'This app does the same, only faster. Catch the lucky moments as they happen, wherever you are. By evening, the list is already there.'],
+  settingsT:'Settings.', settingsP:'Everything lives only on this phone. Nothing is sent anywhere. Clearing your browser data or deleting the app removes it, so keep a backup.',
+  stats:(e, d) => `${e} lucky things over ${d} ${d === 1 ? 'day' : 'days'}`,
+  lastBackup:d => `Last backup: ${d}`, noBackup:'No backup yet.',
+  saveBackup:'save a backup', restore:'restore from backup',
+  tipIOS:'Tip: choose <b>Save to Files</b> → <b>iCloud Drive</b>, so it isn’t only on this phone.',
+  tipOther:'Tip: save it to Google Drive or email it to yourself, so it isn’t only on this phone.',
+  backupSaved:'Backup saved', restored:'Restored', notBackup:"That file isn't a Lucky Day backup.",
+  confirmImport:n => `Replace everything on this phone with the backup (${n} lucky things)?`,
+  backupCardT:'Keep your luck safe.', backupCardP:'Your lucky things live only on this phone. A backup keeps them safe if you lose or change phones.',
+  bline:safari => `You're using ${safari ? 'Safari' : 'the browser'}. <b>Move to the app</b>`,
+  setupEy:'before you start', setupT:'Two quick steps.', moveEy:'keep your lucky things', moveT:'Move to the app.',
+  stepL:n => `step ${n}`,
+  saveHaveT:'Save what you have.', saveHaveP:"On iPhone, the home-screen app has its own storage, so what you've added here won't move over by itself. Save a backup first, then restore it in the app from <b>Settings</b>.",
+  addHomeT:'Add to your home screen.', addHomeP:"It works best as an app: one tap from your home screen, full-screen and offline, so a lucky moment takes seconds to catch.", addHomeIOS:' On iPhone, anything you add in Safari stays in Safari.',
+  howIOS:'Tap <b>Share</b> {share} then <b>Add to Home Screen</b> {add}', cantSee:"Can't see Share? It's in Safari's <b>⋯</b> menu.",
+  howAndroidBtn:'add to home screen', howAndroid:'Open the browser menu <b>⋮</b> and tap <b>Add to Home screen</b> or <b>Install app</b>.',
+  howInApp:(app, safari) => `You're inside ${app || 'another app'}, which can't add apps. Tap <b>⋯</b> and choose <b>Open in ${safari ? 'Safari' : 'browser'}</b>, then come back to this step.`,
+  openT:'Open it and catch your first lucky thing.', openP:'Find <b>Lucky Day</b> on your home screen and tap <b>something lucky</b>.',
+  openRT:'Open the app and restore.', openRP:'Open <b>Lucky Day</b> from your home screen, go to <b>Settings</b> and tap <b>restore from backup</b>.',
+  useBrowser:(has, safari) => `${has ? 'keep going' : 'or start'} in ${safari ? 'Safari' : 'the browser'} instead`,
+  today:'Today', yesterday:'Yesterday', back:'Back', close:'Close',
+  errT:'Something went wrong.', errP:'Your lucky things are safe on this phone. Please try again.', tryAgain:'try again'
+};
+
+/* ---------- storage ---------- */
+let S = { entries: [] };
+function load(){ try { const r = localStorage.getItem(KEY); if (r) S = JSON.parse(r); } catch(e){} if (!S || !Array.isArray(S.entries)) S = { entries: [] }; if (!S.notes || typeof S.notes !== 'object') S.notes = {}; }
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(S)); } catch(e){ toast('Could not save on this device.'); } }
+try { navigator.storage && navigator.storage.persist && navigator.storage.persist(); } catch(e){}
+
+/* ---------- platform ---------- */
+const UA = navigator.userAgent || '';
+const isIOS = /iphone|ipad|ipod/i.test(UA) || (/Macintosh/.test(UA) && navigator.maxTouchPoints > 1);
+const isAndroid = /android/i.test(UA);
+const inApp = (() => { const m = UA.match(/Instagram|FBAN|FBAV|FB_IAB|Snapchat|TikTok|musical_ly|LinkedInApp|Pinterest/i); if (!m) return null; const k = m[0].toLowerCase();
+  return k.includes('insta') ? 'Instagram' : k.startsWith('fb') ? 'Facebook' : k.includes('snap') ? 'Snapchat' : (k.includes('tiktok')||k.includes('musical')) ? 'TikTok' : k.includes('linked') ? 'LinkedIn' : 'Pinterest'; })();
+const installed = () => { try { return matchMedia('(display-mode: standalone)').matches || navigator.standalone === true; } catch(e){ return false; } };
+const mobileBrowser = () => !installed() && (isIOS || isAndroid);
+const isSafari = () => isIOS && !inApp;
+const BKEY = 'luckyday.browserOk';
+const browserOk = () => { try { return localStorage.getItem(BKEY) === '1'; } catch(e){ return false; } };
+let installEvt = null;
+window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEvt = e; if (location.hash === '#setup') render(); });
+
+/* ---------- dates ---------- */
+const startOfDay = t => { const d = new Date(t); d.setHours(0,0,0,0); return d.getTime(); };
+const dayKey = t => { const d = new Date(t); return d.getFullYear() + '-' + (d.getMonth()+1) + '-' + d.getDate(); };
+const longDate = new Intl.DateTimeFormat('en-GB', {weekday:'long', day:'numeric', month:'long'});
+const shortDate = new Intl.DateTimeFormat('en-GB', {weekday:'short', day:'numeric', month:'short'});
+const fullDate = new Intl.DateTimeFormat('en-GB', {day:'numeric', month:'long', year:'numeric'});
+const timeFmt = new Intl.DateTimeFormat('en-GB', {hour:'2-digit', minute:'2-digit'});
+function dayLabel(t){ const today = startOfDay(Date.now()), d = startOfDay(t);
+  return d === today ? T.today : d === today - DAY ? T.yesterday : shortDate.format(t); }
+
+/* ---------- model ---------- */
+const todays = () => S.entries.filter(e => startOfDay(e.t) === startOfDay(Date.now())).sort((a,b) => a.t - b.t);
+const keyStart = k => { const [y, m, d] = k.split('-').map(Number); return new Date(y, m - 1, d).getTime(); };
+function pastDays(){
+  const today = startOfDay(Date.now()), map = new Map();
+  const get = k => { if (!map.has(k)) map.set(k, { key: k, t: keyStart(k), entries: [], note: S.notes[k] }); return map.get(k); };
+  S.entries.filter(e => startOfDay(e.t) < today).forEach(e => get(dayKey(e.t)).entries.push(e));
+  Object.keys(S.notes).filter(k => keyStart(k) < today && S.notes[k] && S.notes[k].text).forEach(k => get(k));
+  return [...map.values()].sort((a,b) => b.t - a.t).map(d => (d.entries.sort((a,b) => a.t - b.t), d));
+}
+const nl2br = t => esc(t).replace(/\n/g, '<br>');
+function noteBlock(k, isToday){
+  const n = S.notes[k];
+  if (n && n.text) return `<button class="dnote" onclick="WL.note('${k}')"><span class="nl">${T.noteL}</span><span class="nt">${nl2br(n.text)}</span></button>`;
+  if (!isToday) return '';
+  const eve = new Date().getHours() >= 17;
+  return `<button class="notebtn${eve ? ' eve' : ''}" onclick="WL.note('${k}')"><span class="nl">${T.noteL}</span><b>${T.noteBtn}</b><span class="ns">${T.noteBtnSub}</span></button>`;
+}
+const dayCount = () => new Set(S.entries.map(e => dayKey(e.t)).concat(Object.keys(S.notes).filter(k => S.notes[k] && S.notes[k].text))).size;
+
+/* ---------- router ---------- */
+window.addEventListener('hashchange', render);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) render(); });
+let showDays = 7, memIdx = null, justAdded = null;
+
+function render(){
+  try { renderInner(); } catch(err) {
+    try { console.error(err); } catch(e){}
+    $('#app').innerHTML = top('', '') + `<div class="hero">${T.errT}</div><p class="sub">${T.errP}</p>
+      <div class="actions"><button class="btn block" onclick="location.hash='';location.reload()">${T.tryAgain}</button></div>
+      <p class="hint">${esc(err && err.message)}</p>`;
+  }
+}
+function renderInner(){
+  closeSheet(true);
+  const v = location.hash.replace(/^#\/?/, '');
+  const app = $('#app');
+  if (v === 'idea') app.innerHTML = viewIdea();
+  else if (v === 'settings') app.innerHTML = viewSettings();
+  else if (v === 'setup') app.innerHTML = viewSetup();
+  else app.innerHTML = viewToday();
+  $('#fabwrap').innerHTML = '';
+  if (v) window.scrollTo(0, 0);
+}
+
+/* ---------- views ---------- */
+function top(left, right){ return `<div class="top">${left || '<span class="spacer"></span>'}<div class="brand">Lucky Day</div>${right || '<span class="spacer"></span>'}</div>`; }
+const backBtn = () => `<button class="iconbtn" aria-label="${T.back}" onclick="location.hash=''">${I.back}</button>`;
+const entryRow = e => `<button class="entry${e.id === justAdded ? ' pop' : ''}" onclick="WL.edit('${e.id}')">${I.spark}<span class="tx">${esc(e.text)}</span><span class="tm">${timeFmt.format(e.t)}</span></button>`;
+
+function viewToday(){
+  const list = todays(), days = pastDays();
+  let out = top('', `<button class="iconbtn" aria-label="${T.menuT}" onclick="WL.menu()">${I.menu}</button>`);
+  out += browserLine() || backupCard();
+  out += `<div class="cover"><div class="date">${longDate.format(Date.now())}</div><div class="script">today</div><div class="hl">${T.hl}</div></div>`;
+  if (list.length) {
+    out += `<div class="count">${T.count(list.length)}</div>`;
+    out += `<div class="page tpage">${list.map(entryRow).join('')}</div>`;
+  } else {
+    out += `<div class="page tpage" style="margin-top:24px"><div class="empty">${T.emptyT}<br>${T.emptyP}<div class="ex">${T.examples.join('.<br>')}.</div></div></div>`;
+  }
+  out += `<div class="actions" style="margin-top:16px"><button class="btn block addbtn" onclick="WL.add()">${I.plus}${T.addBtn}</button></div>`;
+  out += noteBlock(dayKey(Date.now()), true);
+  const past = S.entries.filter(e => startOfDay(e.t) < startOfDay(Date.now()));
+  if (past.length >= 1) {
+    if (memIdx === null || !past[memIdx]) memIdx = Math.floor(Math.random() * past.length);
+    const m = past[memIdx];
+    out += `<div class="memory"><div class="lbl">${T.memoryL}</div><div class="mt">${esc(m.text)}</div><div class="md">${fullDate.format(m.t)}</div>${past.length > 1 ? `<button onclick="WL.another()">${T.another}</button>` : ''}</div>`;
+  }
+  if (days.length) {
+    out += `<h2 class="sec">${T.earlier}</h2>`;
+    out += days.slice(0, showDays).map(d => `<div class="day"><div class="dh"><b>${dayLabel(d.t)}</b><span>${d.entries.length || ''}</span></div>${d.entries.length ? `<div class="page">${d.entries.map(entryRow).join('')}</div>` : ''}${noteBlock(d.key, false)}</div>`).join('');
+    if (days.length > showDays) out += `<button class="more" onclick="WL.more()">${T.showMore}</button>`;
+  }
+  return out + `<div class="foot"><a class="link" href="#idea">${T.mIdea}</a> · <a class="link" href="#settings">${T.mSettings}</a></div>`;
+}
+
+function viewIdea(){
+  let out = top(backBtn(), '');
+  out += `<div class="cover"><div class="date">the idea</div><div class="script">today</div><div class="hl">${T.hl}</div></div>`;
+  out += `<div class="story">${T.idea.map(p => `<p>${esc(p)}</p>`).join('<div class="dash">–</div>')}</div>`;
+  out += `<div class="actions"><button class="btn block" onclick="location.hash='';setTimeout(()=>WL.add(),50)">${I.plus} ${T.addBtn}</button></div>`;
+  return out;
+}
+
+const backupTip = () => isIOS ? T.tipIOS : T.tipOther;
+function viewSettings(){
+  let out = top(backBtn(), '');
+  out += `<div class="hero">${T.settingsT}</div><p class="sub">${T.settingsP}</p>`;
+  out += `<div class="card" style="text-align:center"><div class="ct" style="color:var(--gold)">${T.stats(S.entries.length, dayCount())}</div>
+    <p class="hint" style="margin:0">${S.lastBackup ? T.lastBackup(fullDate.format(S.lastBackup)) : T.noBackup}</p></div>`;
+  out += `<div class="actions"><button class="btn block" onclick="WL.exportData()">${T.saveBackup}</button>
+    <button class="btn ghost block" onclick="document.getElementById('imp').click()">${T.restore}</button>
+    <input type="file" id="imp" accept="application/json,.json" hidden onchange="WL.importData(this)"></div>
+    <p class="hint" style="text-align:center">${backupTip()}</p>`;
+  return out;
+}
+
+function browserLine(){ return mobileBrowser() ? `<button class="bline" onclick="location.hash='setup'"><span>${T.bline(isSafari())}</span>${I.back}</button>` : ''; }
+function backupDue(){
+  if (S.entries.length < 15) return false;
+  const now = Date.now();
+  if (S.backupSnooze && now - S.backupSnooze < 14 * DAY) return false;
+  return !S.lastBackup || now - S.lastBackup > 30 * DAY;
+}
+function backupCard(){
+  if (!backupDue()) return '';
+  return `<div class="card" style="position:relative;margin:4px 0 6px"><button class="iconbtn" style="position:absolute;top:8px;right:8px" aria-label="${T.close}" onclick="WL.snooze()">${I.close}</button>
+    <div class="ct" style="color:var(--gold)">${T.backupCardT}</div><p>${T.backupCardP}</p>
+    <button class="btn block" onclick="WL.exportData()">${T.saveBackup}</button><p class="small" style="margin:10px 0 0">${backupTip()}</p></div>`;
+}
+
+function viewSetup(){
+  const has = S.entries.length > 0, mv = has && isIOS, n = k => mv ? k + 1 : k;
+  let how;
+  if (inApp) how = `<p class="step">${T.howInApp(inApp, isIOS)}</p>`;
+  else if (isIOS) how = `<p class="step">${T.howIOS.replace('{share}', I.share).replace('{add}', I.add)}</p><p class="small">${T.cantSee}</p>`;
+  else if (installEvt) how = `<button class="btn block" onclick="WL.install()">${T.howAndroidBtn}</button>`;
+  else how = `<p class="step">${T.howAndroid}</p>`;
+  let out = top(backBtn(), '');
+  out += `<div class="hint" style="letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--gold);margin-top:10px">${mv ? T.moveEy : T.setupEy}</div><div class="hero">${mv ? T.moveT : T.setupT}</div>`;
+  if (mv) out += `<div class="card"><div class="num">${T.stepL(1)}</div><div class="ct">${T.saveHaveT}</div><p>${T.saveHaveP}</p><button class="btn ghost block" onclick="WL.exportData()">${T.saveBackup}</button></div>`;
+  out += `<div class="card"><div class="num">${T.stepL(n(1))}</div><div class="ct">${T.addHomeT}</div><p>${T.addHomeP}${isIOS ? T.addHomeIOS : ''}</p>${how}</div>`;
+  out += `<div class="card"><div class="num">${T.stepL(n(2))}</div><div class="ct">${mv ? T.openRT : T.openT}</div><p>${mv ? T.openRP : T.openP}</p></div>`;
+  out += `<p style="text-align:center;margin-top:24px"><button class="link" onclick="WL.useBrowser()">${T.useBrowser(has, isSafari())}</button></p>`;
+  return out;
+}
+
+/* ---------- sheet ---------- */
+function openSheet(html){
+  const L = $('#layer');
+  L.innerHTML = `<div class="scrim" onclick="WL.close()"></div><div class="sheet" role="dialog"><div class="grab"></div>${html}</div>`;
+  requestAnimationFrame(() => requestAnimationFrame(() => L.classList.add('open')));
+}
+function closeSheet(now){
+  const L = $('#layer'); if (!L.innerHTML) return;
+  L.classList.remove('open');
+  if (now) L.innerHTML = ''; else setTimeout(() => { if (!L.classList.contains('open')) L.innerHTML = ''; }, 260);
+}
+function entrySheet(e){
+  openSheet(`<div class="head"><button class="iconbtn" onclick="WL.close()" aria-label="${T.close}">${I.close}</button><div>${e ? T.editT : T.addT}</div><span class="spacer"></span></div>
+    <textarea id="et" maxlength="200" rows="3" placeholder="${T.ph}" enterkeyhint="done">${e ? esc(e.text) : ''}</textarea>
+    ${e ? '' : `<div class="sug">${T.sugs.map(s => `<button type="button" data-s="${esc(s)}">${esc(s)}</button>`).join('')}</div>`}
+    ${e ? `<div class="row2"><button class="btn danger" id="edel">${T.del}</button><button class="btn" id="esave">${T.save}</button></div>`
+        : `<div class="actions" style="margin-top:14px"><button class="btn block" id="esave">${T.add}</button></div>`}`);
+  const ta = $('#et');
+  // focus immediately so the keyboard opens on the same tap (iOS needs this synchronously)
+  ta.focus({preventScroll:true});
+  const go = () => { const v = ta.value.trim(); if (!v) { ta.focus(); return; }
+    if (e) { e.text = v; save(); render(); toast(T.saved); }
+    else { const n = { id: uid(), text: v, t: Date.now() }; S.entries.push(n); justAdded = n.id; save(); render(); toast(T.added); setTimeout(() => { justAdded = null; }, 600); } };
+  ta.addEventListener('keydown', ev => { if (ev.key === 'Enter' && !ev.shiftKey) { ev.preventDefault(); go(); } });
+  $('#esave').onclick = go;
+  const sug = $('.sug'); if (sug) sug.addEventListener('click', ev => { const b = ev.target.closest('button'); if (!b) return; ta.value = b.dataset.s; ta.focus(); });
+  if (e) $('#edel').onclick = () => { if (!confirm(T.confirmDel)) return; S.entries = S.entries.filter(x => x.id !== e.id); save(); render(); toast(T.deleted); };
+}
+
+function noteSheet(k){
+  const n = S.notes[k], isToday = k === dayKey(Date.now());
+  openSheet(`<div class="head"><button class="iconbtn" onclick="WL.close()" aria-label="${T.close}">${I.close}</button><div>${isToday ? T.noteT : dayLabel(keyStart(k))}</div><span class="spacer"></span></div>
+    <textarea id="nt" class="ntext" maxlength="4000" placeholder="${T.notePh}">${n ? esc(n.text) : ''}</textarea>
+    ${n && n.text ? `<div class="row2"><button class="btn danger" id="ndel">${T.del}</button><button class="btn" id="nsave">${T.save}</button></div>`
+                  : `<div class="actions" style="margin-top:14px"><button class="btn block" id="nsave">${T.save}</button></div>`}`);
+  const ta = $('#nt'); ta.focus({preventScroll:true});
+  $('#nsave').onclick = () => { const v = ta.value.trim();
+    if (!v) { delete S.notes[k]; } else S.notes[k] = { text: v, t: (n && n.t) || Date.now(), edited: n ? Date.now() : undefined };
+    save(); render(); if (v) toast(T.noteSaved); };
+  const d = $('#ndel'); if (d) d.onclick = () => { if (!confirm(T.confirmDelNote)) return; delete S.notes[k]; save(); render(); toast(T.deleted); };
+}
+function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('show'), 1800); }
+
+/* ---------- actions ---------- */
+window.WL = {
+  close: () => closeSheet(),
+  add(){ if (mobileBrowser() && !browserOk() && !S.entries.length) { location.hash = 'setup'; return; } entrySheet(null); },
+  note(k){ noteSheet(k); },
+  edit(id){ const e = S.entries.find(x => x.id === id); if (e) entrySheet(e); },
+  another(){ const past = S.entries.filter(e => startOfDay(e.t) < startOfDay(Date.now())); if (past.length > 1) { let i; do { i = Math.floor(Math.random() * past.length); } while (i === memIdx); memIdx = i; } render(); },
+  more(){ showDays += 14; render(); },
+  menu(){ openSheet(`<div class="head"><button class="iconbtn" onclick="WL.close()" aria-label="${T.close}">${I.close}</button><div>${T.menuT}</div><span class="spacer"></span></div>
+    <div class="actions" style="margin-top:8px"><button class="btn ghost block" onclick="location.hash='idea'">${T.mIdea}</button><button class="btn ghost block" onclick="location.hash='settings'">${T.mSettings}</button></div>`); },
+  useBrowser(){ try { localStorage.setItem(BKEY, '1'); } catch(e){} location.hash = ''; if (!S.entries.length) setTimeout(() => WL.add(), 60); },
+  async install(){ if (!installEvt) return; const e = installEvt; installEvt = null; try { e.prompt(); await e.userChoice; } catch(err){} render(); },
+  snooze(){ S.backupSnooze = Date.now(); save(); render(); },
+  markBackup(){ S.lastBackup = Date.now(); delete S.backupSnooze; save(); render(); toast(T.backupSaved); },
+  async exportData(){
+    const name = 'lucky-day-backup-' + new Date().toISOString().slice(0,10) + '.json';
+    const blob = new Blob([JSON.stringify({ app: 'lucky-day', version: 1, exported: Date.now(), ...S }, null, 1)], { type: 'application/json' });
+    try { const f = new File([blob], name, { type: 'application/json' });
+      if (navigator.canShare && navigator.canShare({ files: [f] })) { await navigator.share({ files: [f], title: 'Lucky Day backup' }); WL.markBackup(); return; }
+    } catch(e){ if (e && e.name === 'AbortError') return; }
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click();
+    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000); WL.markBackup();
+  },
+  importData(input){ const f = input.files && input.files[0]; if (!f) return; const r = new FileReader();
+    r.onload = () => { try { const d = JSON.parse(r.result); if (!Array.isArray(d.entries)) throw 0;
+        if (!confirm(T.confirmImport(d.entries.length))) return;
+        S = { entries: d.entries, notes: d.notes || {}, lastBackup: d.exported || S.lastBackup }; save(); location.hash = ''; render(); toast(T.restored);
+      } catch(e){ toast(T.notBackup); } finally { input.value = ''; } };
+    r.readAsText(f); }
+};
+
+/* ---------- start ---------- */
+load(); render();
+if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
+})();
+</script>
+</body>
+</html>
